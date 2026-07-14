@@ -9,39 +9,371 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-<!-- ************navbar****************** -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container d-flex justify-content-between">
-    
-     <div class="d-flex gap-3 align-items-center">
-    <i class="fa-solid fa-utensils fa-lg left-icon"></i>
-    <div>
-      <h1 class="navbar-brand mb-0 pb-0 fw-bold fs-4" href="#">What's For Dinner</h1>
-      <p class="mb-0 text-secondary">Your daily meal inspiration</p>
+    <!-- ************navbar****************** -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white border py-3">
+      <div class="container d-flex justify-content-between">
+        <div class="d-flex gap-3 align-items-center">
+          <i class="fa-solid fa-utensils fa-lg left-icon"></i>
+          <div>
+            <h1 class="navbar-brand mb-0 pb-0 fw-bold fs-4" href="#">
+              What's For Dinner
+            </h1>
+            <p class="mb-0 text-secondary">Your daily meal inspiration</p>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 list-unstyled gap-4 mb-0 align-items-center d-flex"
+          >
+            <li>
+              <i class="fa-solid fa-bookmark fa-lg me-3 me-lg-0"></i
+              ><span class="d-lg-none">Saved Recipes</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock-rotate-left fa-lg me-3 me-lg-0"></i
+              ><span class="d-lg-none">Recent</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-gear fa-lg me-3 me-lg-0"></i
+              ><span class="d-lg-none">Settings</span>
+            </li>
+            <li class="nav-img">
+              <img src="./images/avatar-4.jpg" alt="" class="me-3 me-lg-0" />
+              <span class="d-lg-none">Profile</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5 food-container">
+      <div class="food d-flex">
+        <div class="food-img position-relative">
+          <img src="./images/photo-1612874742237-6526221588e3.avif" id="recipeImg" alt="" />
+          <div class="top-image">
+            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59)"></i>
+            <h5 id="reviews" class="d-inline mb-0">4.8</h5>
+            <p id="reviewsNum" class="d-inline mb-0">(445 reviews)</p>
+          </div>
+          <div class="bottom-image d-flex justify-content-between">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <i
+                class="fa-solid fa-clock fa-xl mb-2"
+                style="color: #ff6900"
+              ></i>
+              <p class="mb-0 text-secondary">Prep Time</p>
+              <span id="prepTime" class="h6 mb-0 mt-0">20 min</span>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <i
+                class="fa-solid fa-fire-burner fa-xl mb-2"
+                style="color: hsl(357, 96%, 58%)"
+              ></i>
+              <p class="mb-0 text-secondary">Cook Time</p>
+              <span id="cockTime" class="h6 mb-0">15 min</span>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <i
+                class="fa-solid fa-users fa-xl mb-2"
+                style="color: hsl(216, 100%, 58%)"
+              ></i>
+              <p class="mb-0 text-secondary">Servings</p>
+              <span id="people" class="h6 mb-0">2 people</span>
+            </div>
+          </div>
+        </div>
+        <div class="recipe">
+          <div
+            class="recipe-header d-flex justify-content-between align-items-center"
+          >
+            <div class="w-75">
+              <span id="first-span">intermediate</span>
+              <span id="second-span">asian</span>
+              <h2 id="recipeName" class="fw-bold mt-3 h1">Pad Thai</h2>
+              <p id="recipeDescription" class="fs-5 text-secondary">
+                Popular Thai stir-fried noodles with shrimp and peanuts
+              </p>
+            </div>
+            <div class="recipe-icons">
+              <i class="fa-solid fa-bookmark"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </div>
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button
+                class="nav-link active"
+                id="nav-home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-home"
+                type="button"
+                role="tab"
+                aria-controls="nav-Ingredients"
+                aria-selected="true"
+              >
+                <i class="fa-solid fa-list-check"></i> Ingredients
+              </button>
+              <button
+                class="nav-link"
+                id="nav-profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-profile"
+                type="button"
+                role="tab"
+                aria-controls="nav-Instructions"
+                aria-selected="false"
+              >
+                <i class="fa-solid fa-book-open"></i> Instructions
+              </button>
+              <button
+                class="nav-link"
+                id="nav-contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-contact"
+                type="button"
+                role="tab"
+                aria-controls="nav-Nutrition"
+                aria-selected="false"
+              >
+                <i class="fa-solid fa-chart-pie"></i> Nutrition
+              </button>
+              <button
+                class="nav-link"
+                id="nav-contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-Chef"
+                type="button"
+                role="tab"
+                aria-controls="nav-Nutrition"
+                aria-selected="false"
+              >
+                <i class="fa-solid fa-lightbulb"></i> Chef's Tips
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="nav-home"
+              role="tabpanel"
+              aria-labelledby="nav-home-tab"
+              tabindex="0"
+            >
+          
+            <ul class="recipe-list mt-5" id="ingredients">
+  <li><span>1</span> 2 tablespoons green curry paste</li>
+  <li><span>2</span> 400ml coconut milk</li>
+  <li><span>3</span> 300g chicken breast, sliced</li>
+  <li><span>4</span> 1 red bell pepper, sliced</li>
+  <li><span>5</span> 100g green beans</li>
+  <li><span>6</span> 1 eggplant, cubed</li>
+</ul>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-profile"
+              role="tabpanel"
+              aria-labelledby="nav-profile-tab"
+              tabindex="0"
+            >
+              <div class="steps mt-5" id="steps">
+                <div class="step">
+                  <div class="number">1</div>
+                  <p>
+                    Bring a large pot of salted water to boil. Cook spaghetti
+                    according to package directions until al dente.
+                  </p>
+                </div>
+
+                <div class="step">
+                  <div class="number">2</div>
+                  <p>
+                    While pasta cooks, heat a large skillet over medium heat.
+                    Add diced pancetta and cook until crispy, about 5-7 minutes.
+                  </p>
+                </div>
+
+                <div class="step">
+                  <div class="number">3</div>
+                  <p>
+                    In a bowl, whisk together eggs, grated Pecorino Romano, and
+                    Parmesan cheese. Add plenty of freshly ground black pepper.
+                  </p>
+                </div>
+
+                <div class="step">
+                  <div class="number">4</div>
+                  <p>
+                    Reserve 1 cup of pasta cooking water before draining. Drain
+                    pasta and immediately add to the skillet with pancetta.
+                  </p>
+                </div>
+                <div class="step">
+                  <div class="number">5</div>
+                  <p>
+                    Remove skillet from heat. Quickly pour in egg mixture while
+                    tossing pasta vigorously. Add reserved pasta water as needed
+                    to create a creamy sauce.
+                  </p>
+                </div>
+                <div class="step">
+                  <div class="number">6</div>
+                  <p>
+                    Serve immediately with extra cheese and black pepper on top.
+                    Enjoy your authentic carbonara!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-contact"
+              role="tabpanel"
+              aria-labelledby="nav-contact-tab"
+              tabindex="0"
+            >
+              <div class="nutrition mt-5">
+                <div class="nutrition-card">
+                  <div class="icon orange">
+                    <i class="fa-solid fa-fire"></i>
+                  </div>
+
+                  <div class="info">
+                    <h4>Calories</h4>
+                    <span id="calories">520 kcal</span>
+                  </div>
+                </div>
+
+                <div class="nutrition-card">
+                  <div class="icon blue">
+                    <i class="fa-solid fa-dumbbell"></i>
+                  </div>
+
+                  <div class="info">
+                    <h4>Protein</h4>
+                    <span id="protein">28g</span>
+                  </div>
+                </div>
+
+                <div class="nutrition-card">
+                  <div class="icon yellow">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                  </div>
+
+                  <div class="info">
+                    <h4>Carbohydrates</h4>
+                    <span id="carbs">62g</span>
+                  </div>
+                </div>
+
+                <div class="nutrition-card">
+                  <div class="icon red">
+                    <i class="fa-solid fa-droplet"></i>
+                  </div>
+
+                  <div class="info">
+                    <h4>Fat</h4>
+                    <span id="fat">18g</span>
+                  </div>
+                </div>
+
+                <div class="nutrition-card">
+                  <div class="icon green">
+                    <i class="fa-solid fa-seedling"></i>
+                  </div>
+
+                  <div class="info">
+                    <h4>Fiber</h4>
+                    <span id="fiber">3g</span>
+                  </div>
+                </div>
+
+                <div class="nutrition-card">
+                  <div class="icon pink">
+                    <i class="fa-solid fa-cube"></i>
+                  </div>
+
+                  <div class="info">
+                    <h4>Sodium</h4>
+                    <span id="sodium">680mg</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-Chef"
+              role="tabpanel"
+              aria-labelledby="nav-Chef-tab"
+              tabindex="0"
+            >
+              <div class="tips mt-5" id="tips">
+                <div class="tip">
+                  <i class="fa-solid fa-check"></i>
+                  <p>
+                    Use room temperature eggs for a smoother sauce consistency.
+                  </p>
+                </div>
+
+                <div class="tip">
+                  <i class="fa-solid fa-check"></i>
+                  <p>
+                    Work quickly when mixing eggs with hot pasta to avoid
+                    scrambling.
+                  </p>
+                </div>
+
+                <div class="tip">
+                  <i class="fa-solid fa-check"></i>
+                  <p>
+                    Reserve extra pasta water - it's the secret to perfect
+                    creaminess.
+                  </p>
+                </div>
+
+                <div class="tip">
+                  <i class="fa-solid fa-check"></i>
+                  <p>
+                    Reserve extra pasta water - it's the secret to perfect
+                    creaminess.
+                  </p>
+                </div>
+
+                <div class="tip">
+                  <i class="fa-solid fa-check"></i>
+                  <p>
+                    Reserve extra pasta water - it's the secret to perfect
+                    creaminess.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="recipe-btn" onclick="displayRecipe(randomRecipe())">
+            <i class="fa-solid fa-arrows-rotate"></i>
+            Try Another Recipe
+          </button>
+        </div>
+      </div>
     </div>
-    </div>  
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 list-unstyled gap-4 mb-0 align-items-center d-flex">
-          <li>
-     <i class="fa-solid fa-bookmark fa-lg"></i>
-    </li>
-  <li><i class="fa-solid fa-clock-rotate-left fa-lg"></i></li>
-  <li><i class="fa-solid fa-gear fa-lg"></i></li>
-  <li class="nav-img"><img src="./images/avatar-4.jpg" alt=""></li>
-  </ul>
-    </div>
-  </div>
-</nav>
 
-
-
-
-
-
-    
     <script src="./js/script.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
