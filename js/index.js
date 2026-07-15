@@ -58,9 +58,9 @@ var recipes = [
       "honey garlic salmon with vegetables, gourmet presentation, food photography",
     imgCover:
       "https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=800&auto=format&fit=crop",
-    prepTime: "25 min",
-    cookTime: "25 min",
-    totalTime: 50,
+    prepTime: "10 min",
+    cookTime: "15 min",
+    totalTime: 25,
     servings: "2 people",
     difficulty: "Easy",
     category: "Seafood",
@@ -164,9 +164,9 @@ var recipes = [
       "margherita pizza with fresh basil, melted mozzarella, wood fired, food photography",
     imgCover:
       "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop",
-    prepTime: "30 min",
-    cookTime: "25 min",
-    totalTime: 55,
+    prepTime: "20 min",
+    cookTime: "15 min",
+    totalTime: 35,
     servings: "4 people",
     difficulty: "Medium",
     category: "Italian",
@@ -537,263 +537,6 @@ var recipes = [
       "Serve immediately before it melts.",
     ],
   },
-  {
-    name: "Chicken Alfredo Pasta",
-    description: "Creamy Alfredo pasta with grilled chicken and parmesan cheese",
-    image: "chicken alfredo pasta with parmesan, creamy sauce, food photography",
-    imgCover: "https://gimmedelicious.com/wp-content/uploads/2024/10/Skinny-Chicken-Broccoli-Alfredo.jpg",
-    prepTime: "15 min",
-    cookTime: "25 min",
-    totalTime: 40,
-    servings: "4 people",
-    difficulty: "Medium",
-    category: "Italian",
-    ratingsAverage: 4.8,
-    ratingsQuantity: 341,
-
-    ingredients: [
-        "300g fettuccine pasta",
-        "2 chicken breasts",
-        "2 tablespoons butter",
-        "3 cloves garlic, minced",
-        "250ml heavy cream",
-        "100g parmesan cheese",
-        "Salt and black pepper",
-        "Fresh parsley"
-    ],
-
-    instructions: [
-        "Cook the pasta according to package directions.",
-        "Season and grill the chicken until cooked through.",
-        "Melt butter in a pan and sauté garlic.",
-        "Add heavy cream and parmesan cheese.",
-        "Mix cooked pasta into the sauce.",
-        "Top with sliced chicken and parsley before serving."
-    ],
-
-    nutrition: {
-        calories: "590 kcal",
-        protein: "39g",
-        carbs: "46g",
-        fat: "29g",
-        fiber: "3g",
-        sodium: "760mg"
-    },
-
-    tips: [
-        "Use freshly grated parmesan.",
-        "Don't boil the sauce after adding cheese.",
-        "Reserve some pasta water.",
-        "Serve immediately."
-    ]
-},
-{
-    name: "Grilled Chicken Sandwich",
-    description: "Juicy grilled chicken served in a toasted bun with fresh vegetables",
-    image: "grilled chicken sandwich with lettuce tomato fries food photography",
-    imgCover: "https://images.unsplash.com/photo-1550317138-10000687a72b?q=80&w=800&auto=format&fit=crop",
-    prepTime: "15 min",
-    cookTime: "15 min",
-    totalTime: 30,
-    servings: "2 people",
-    difficulty: "Easy",
-    category: "Fast Food",
-    ratingsAverage: 4.7,
-    ratingsQuantity: 225,
-
-    ingredients: [
-        "2 burger buns",
-        "2 chicken breasts",
-        "Lettuce",
-        "Tomato slices",
-        "Cheddar cheese",
-        "Mayonnaise",
-        "Olive oil",
-        "Salt and pepper"
-    ],
-
-    instructions: [
-        "Season chicken with salt and pepper.",
-        "Grill the chicken until golden.",
-        "Toast the burger buns.",
-        "Spread mayonnaise on both sides.",
-        "Add lettuce, tomato, cheese, and chicken.",
-        "Serve with fries."
-    ],
-
-    nutrition: {
-        calories: "510 kcal",
-        protein: "37g",
-        carbs: "35g",
-        fat: "22g",
-        fiber: "3g",
-        sodium: "690mg"
-    },
-
-    tips: [
-        "Marinate the chicken for extra flavor.",
-        "Toast the buns lightly.",
-        "Add pickles if desired.",
-        "Serve while hot."
-    ]
-},
-{
-    name: "Shrimp Fried Rice",
-    description: "Classic Asian fried rice with shrimp, vegetables, and soy sauce",
-    image: "shrimp fried rice with vegetables asian cuisine food photography",
-    imgCover: "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop",
-    prepTime: "15 min",
-    cookTime: "15 min",
-    totalTime: 30,
-    servings: "4 people",
-    difficulty: "Easy",
-    category: "Asian",
-    ratingsAverage: 4.9,
-    ratingsQuantity: 408,
-
-    ingredients: [
-        "300g cooked rice",
-        "250g shrimp",
-        "2 eggs",
-        "1 carrot, diced",
-        "1/2 cup peas",
-        "2 tablespoons soy sauce",
-        "1 tablespoon sesame oil",
-        "2 green onions"
-    ],
-
-    instructions: [
-        "Cook the shrimp until pink.",
-        "Scramble the eggs and set aside.",
-        "Stir-fry carrots and peas.",
-        "Add cooked rice and soy sauce.",
-        "Mix in shrimp and eggs.",
-        "Garnish with green onions and serve."
-    ],
-
-    nutrition: {
-        calories: "470 kcal",
-        protein: "28g",
-        carbs: "42g",
-        fat: "18g",
-        fiber: "3g",
-        sodium: "840mg"
-    },
-
-    tips: [
-        "Use day-old rice.",
-        "Cook over high heat.",
-        "Don't overcrowd the pan.",
-        "Add sesame oil at the end."
-    ]
-},
-{
-    name: "Egyptian Koshari",
-    description: "Egypt's most famous street food made with rice, pasta, lentils, crispy onions, and spicy tomato sauce.",
-    image: "egyptian koshari with crispy onions tomato sauce street food photography",
-    imgCover: "https://www.seriouseats.com/thmb/EtJeUnCi_CRK2-1g1Qh37njsSME=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/20240524-SEA-KevinWhite-Koshari-7135-c500ac8ef6234d598fc7343799743e21.jpg",
-    prepTime: "20 min",
-    cookTime: "40 min",
-    totalTime: 60,
-    servings: "4 people",
-    difficulty: "Medium",
-    category: "Egyptian",
-    ratingsAverage: 4.9,
-    ratingsQuantity: 615,
-
-    ingredients: [
-        "2 cups Egyptian rice",
-        "1 cup brown lentils",
-        "250g small pasta",
-        "1 cup cooked chickpeas",
-        "3 large onions",
-        "2 cups tomato sauce",
-        "4 cloves garlic",
-        "2 tbsp vinegar",
-        "1 tsp cumin",
-        "Salt and black pepper",
-        "Vegetable oil",
-        "Hot chili sauce (optional)"
-    ],
-
-    instructions: [
-        "Cook the lentils until tender.",
-        "Cook the rice and mix it with the lentils.",
-        "Boil the pasta until al dente.",
-        "Slice the onions and fry until crispy.",
-        "Cook garlic with vinegar, then add tomato sauce, cumin, salt, and pepper.",
-        "Layer rice, pasta, chickpeas, tomato sauce, and crispy onions.",
-        "Serve with extra hot sauce if desired."
-    ],
-
-    nutrition: {
-        calories: "610 kcal",
-        protein: "18g",
-        carbs: "104g",
-        fat: "13g",
-        fiber: "14g",
-        sodium: "690mg"
-    },
-
-    tips: [
-        "Fry the onions until deep golden for the best flavor.",
-        "Serve the tomato sauce hot.",
-        "Add garlic vinegar sauce for an authentic taste.",
-        "Mix everything together before eating."
-    ]
-},
-{
-    name: "Egyptian Molokhia",
-    description: "Traditional Egyptian molokhia made with finely chopped jute leaves, garlic, coriander, and served with rice and chicken.",
-    image: "traditional egyptian molokhia soup with rice and roasted chicken food photography",
-    imgCover: "https://i0.wp.com/eyesclosedcooking.com/wp-content/uploads/2023/01/Egyptian_Molokhia_1.jpg?w=1024&ssl=1",
-    prepTime: "15 min",
-    cookTime: "30 min",
-    totalTime: 45,
-    servings: "4 people",
-    difficulty: "Easy",
-    category: "Egyptian",
-    ratingsAverage: 4.9,
-    ratingsQuantity: 487,
-
-    ingredients: [
-        "500g frozen or fresh molokhia",
-        "4 cups chicken broth",
-        "5 cloves garlic",
-        "2 tbsp ground coriander",
-        "2 tbsp butter or ghee",
-        "Salt",
-        "Black pepper",
-        "Cooked white rice",
-        "Roasted chicken"
-    ],
-
-    instructions: [
-        "Heat the chicken broth until it begins to simmer.",
-        "Add the molokhia and stir gently.",
-        "In a separate pan, sauté garlic in butter until golden.",
-        "Add ground coriander and cook for one minute.",
-        "Pour the garlic mixture into the molokhia.",
-        "Season with salt and black pepper.",
-        "Serve hot with rice and roasted chicken."
-    ],
-
-    nutrition: {
-        calories: "430 kcal",
-        protein: "28g",
-        carbs: "31g",
-        fat: "20g",
-        fiber: "6g",
-        sodium: "580mg"
-    },
-
-    tips: [
-        "Do not let the molokhia boil after adding it to the broth.",
-        "Use fresh garlic for the best flavor.",
-        "Serve with lemon wedges if desired.",
-        "Enjoy with crispy bread or pickles."
-    ]
-},
 ];
 var recipeName = document.getElementById("recipeName");
 var recipeDescription = document.getElementById("recipeDescription");
@@ -812,7 +555,6 @@ var category = document.getElementById("second-span");
 
 function randomRecipe() {
  var randomIndex = Math.floor(Math.random() * recipes.length);
-console.log(randomIndex)
     return recipes[randomIndex];
 }
 function displayRecipe(recipe) {
@@ -836,25 +578,7 @@ function displayRecipe(recipe) {
     document.getElementById("first-span").innerHTML = recipe.difficulty;
     document.getElementById("second-span").innerHTML = recipe.category;
 
-if(recipe.totalTime>45){
-document.getElementById("warning").innerHTML=`
-<div class="warning-box" id="warning">
 
-<div class="warning-icon">
-    <i class="fa-solid fa-triangle-exclamation"></i>
-</div>
-
-<div class="warning-content">
-    <h3>Extended Preparation Time</h3>
-    <p>This recipe requires more than 45 minutes to prepare. Plan accordingly!</p>
-</div>
-
-</div>
-`
-}
-else{
-  document.getElementById("warning").innerHTML=``
-}
 
 
  document.getElementById("ingredients").innerHTML = "";
@@ -903,5 +627,3 @@ document.getElementById("tips").innerHTML +=
 
   
 }
-
-displayRecipe(randomRecipe());
